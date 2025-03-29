@@ -1,0 +1,4 @@
+cd C:\Program Files\MySQL\MySQL Server 8.0\bin
+
+
+mysqldump -u root -p bancodeteste > C:\Users\User\Desktop\BancoDeDadosTorneio2025\torneio2025.sql
