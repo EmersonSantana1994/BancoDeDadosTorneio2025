@@ -261,7 +261,7 @@ CREATE TABLE `ranking_jogadores` (
   `nome` varchar(255) DEFAULT NULL,
   `pontos` bigint DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -270,6 +270,7 @@ CREATE TABLE `ranking_jogadores` (
 
 LOCK TABLES `ranking_jogadores` WRITE;
 /*!40000 ALTER TABLE `ranking_jogadores` DISABLE KEYS */;
+INSERT INTO `ranking_jogadores` VALUES (1,'Homem de Ferro',23),(2,'Sabrina',12),(3,'Luiz',5);
 /*!40000 ALTER TABLE `ranking_jogadores` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -512,4 +513,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-03-30 20:17:48
+-- Dump completed on 2025-03-30 20:33:43
