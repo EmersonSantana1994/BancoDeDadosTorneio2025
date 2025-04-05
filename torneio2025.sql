@@ -30,7 +30,7 @@ CREATE TABLE `artilheiro` (
   PRIMARY KEY (`id`),
   KEY `ar_jg_index` (`id_jogador`),
   CONSTRAINT `artilheiro_ibfk_1` FOREIGN KEY (`id_jogador`) REFERENCES `jogadores` (`id_jogador`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,7 +39,7 @@ CREATE TABLE `artilheiro` (
 
 LOCK TABLES `artilheiro` WRITE;
 /*!40000 ALTER TABLE `artilheiro` DISABLE KEYS */;
-INSERT INTO `artilheiro` VALUES (1,2,'Pantera Negra',59),(2,6,'Azuzinho',60),(3,8,'Homem de Ferro',10),(4,11,'Taylor',9),(5,6,'Wilham',2),(6,10,'Sabrina',30),(7,7,'Pente Preto',1),(8,1,'Joker',58),(9,1,'Filipe',29),(10,1,'Telefone',57),(11,1,'Dove',8),(12,14,'Rafael',6),(13,11,'Renato',46),(14,5,'Pente Laranja',51),(15,5,'Tiago',38),(16,2,'Gradiente',52),(17,6,'Pente Rosa',37),(18,2,'Eva',47),(19,1,'Hammer',45),(20,2,'Rodrigo',5),(21,1,'Rivelino',50),(22,1,'Katchup',40);
+INSERT INTO `artilheiro` VALUES (1,2,'Pantera Negra',59),(2,6,'Azuzinho',60),(3,8,'Homem de Ferro',10),(4,11,'Taylor',9),(5,6,'Wilham',2),(6,10,'Sabrina',30),(7,7,'Pente Preto',1),(8,1,'Joker',58),(9,1,'Filipe',29),(10,1,'Telefone',57),(11,1,'Dove',8),(12,14,'Rafael',6),(13,11,'Renato',46),(14,5,'Pente Laranja',51),(15,5,'Tiago',38),(16,2,'Gradiente',52),(17,6,'Pente Rosa',37),(18,2,'Eva',47),(19,1,'Hammer',45),(20,2,'Rodrigo',5),(21,1,'Rivelino',50),(22,1,'Katchup',40),(23,2,'Vinicius',33),(24,1,'Monstro',44),(25,4,'Gael',42),(26,3,'Thanos',34),(27,4,'Raul',13),(28,1,'Michel',18),(29,1,'Super Homem',14),(30,1,'Sr Incrivel',17),(31,1,'Tati',35);
 /*!40000 ALTER TABLE `artilheiro` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -55,7 +55,7 @@ CREATE TABLE `artilheiro_torneio` (
   `gols` bigint DEFAULT NULL,
   `nome` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -64,7 +64,7 @@ CREATE TABLE `artilheiro_torneio` (
 
 LOCK TABLES `artilheiro_torneio` WRITE;
 /*!40000 ALTER TABLE `artilheiro_torneio` DISABLE KEYS */;
-INSERT INTO `artilheiro_torneio` VALUES (11,1,'Dove'),(12,14,'Rafael'),(13,11,'Renato'),(14,5,'Pente Laranja'),(15,5,'Tiago'),(16,2,'Gradiente'),(17,6,'Pente Rosa'),(18,2,'Eva'),(19,1,'Hammer'),(20,2,'Rodrigo'),(21,1,'Rivelino'),(22,1,'Katchup');
+INSERT INTO `artilheiro_torneio` VALUES (23,2,'Vinicius'),(24,1,'Monstro'),(25,4,'Gael'),(26,3,'Thanos'),(27,4,'Raul'),(28,1,'Michel'),(29,1,'Super Homem'),(30,1,'Sr Incrivel'),(31,1,'Tati');
 /*!40000 ALTER TABLE `artilheiro_torneio` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -83,7 +83,7 @@ CREATE TABLE `assistencia` (
   PRIMARY KEY (`id`),
   KEY `ar_jg_index` (`id_jogador`),
   CONSTRAINT `assistencia_ibfk_1` FOREIGN KEY (`id_jogador`) REFERENCES `jogadores` (`id_jogador`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -92,7 +92,7 @@ CREATE TABLE `assistencia` (
 
 LOCK TABLES `assistencia` WRITE;
 /*!40000 ALTER TABLE `assistencia` DISABLE KEYS */;
-INSERT INTO `assistencia` VALUES (3,2,'Telefone',57),(4,3,'Pente Preto',1),(6,4,'Luiz',3),(7,1,'Filipe',29),(8,4,'Ufe',31),(9,3,'Titan',11),(10,2,'Pantera Negra',59),(11,1,'Monange',32),(12,1,'Homem de Ferro',10),(13,1,'Renan',12),(14,2,'Taylor',9),(15,1,'Joker',58),(16,1,'Wilham',2),(17,3,'Rafael',6),(18,3,'Hammer',45),(19,2,'Rivelino',50),(20,2,'Cindy',49),(21,1,'Pente Rosa',37),(22,2,'Tiago',38),(23,2,'Matias',7),(24,1,'Dove',8),(25,2,'Renato',46),(26,2,'Controle da Tv',48),(27,4,'Rodrigo',5),(28,5,'Eva',47),(29,1,'Gradiente',52),(30,1,'Katchup',40),(31,2,'Dony',39);
+INSERT INTO `assistencia` VALUES (3,2,'Telefone',57),(4,3,'Pente Preto',1),(6,4,'Luiz',3),(7,1,'Filipe',29),(8,4,'Ufe',31),(9,3,'Titan',11),(10,2,'Pantera Negra',59),(11,1,'Monange',32),(12,1,'Homem de Ferro',10),(13,1,'Renan',12),(14,2,'Taylor',9),(15,1,'Joker',58),(16,1,'Wilham',2),(17,3,'Rafael',6),(18,3,'Hammer',45),(19,2,'Rivelino',50),(20,2,'Cindy',49),(21,1,'Pente Rosa',37),(22,2,'Tiago',38),(23,2,'Matias',7),(24,1,'Dove',8),(25,2,'Renato',46),(26,2,'Controle da Tv',48),(27,4,'Rodrigo',5),(28,5,'Eva',47),(29,1,'Gradiente',52),(30,1,'Katchup',40),(31,2,'Dony',39),(32,1,'Thanos',34),(33,1,'Gael',42),(34,2,'Cif',41),(35,1,'Vinicius',33),(36,1,'Luiza',15),(37,1,'Sr Incrivel',17),(38,1,'Tati',35),(39,1,'Michel',18),(40,1,'Varicel',43),(41,1,'Theo',16);
 /*!40000 ALTER TABLE `assistencia` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -108,7 +108,7 @@ CREATE TABLE `assistencia_torneio` (
   `assistencias` bigint DEFAULT NULL,
   `nome` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -117,7 +117,7 @@ CREATE TABLE `assistencia_torneio` (
 
 LOCK TABLES `assistencia_torneio` WRITE;
 /*!40000 ALTER TABLE `assistencia_torneio` DISABLE KEYS */;
-INSERT INTO `assistencia_torneio` VALUES (17,3,'Rafael'),(18,3,'Hammer'),(19,2,'Rivelino'),(20,2,'Cindy'),(21,1,'Pente Rosa'),(22,2,'Tiago'),(23,2,'Matias'),(24,1,'Dove'),(25,2,'Renato'),(26,2,'Controle da Tv'),(27,4,'Rodrigo'),(28,5,'Eva'),(29,1,'Gradiente'),(30,1,'Katchup'),(31,2,'Dony');
+INSERT INTO `assistencia_torneio` VALUES (32,1,'Thanos'),(33,1,'Gael'),(34,2,'Cif'),(35,1,'Vinicius'),(36,1,'Luiza'),(37,1,'Sr Incrivel'),(38,1,'Tati'),(39,1,'Michel'),(40,1,'Varicel'),(41,1,'Theo');
 /*!40000 ALTER TABLE `assistencia_torneio` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -212,7 +212,7 @@ CREATE TABLE `placar_jogo` (
   `nome` varchar(100) DEFAULT NULL,
   `placar` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -351,7 +351,7 @@ CREATE TABLE `resultados` (
 
 LOCK TABLES `resultados` WRITE;
 /*!40000 ALTER TABLE `resultados` DISABLE KEYS */;
-INSERT INTO `resultados` VALUES (1,'3','2025-03-31 06:01:08'),(2,'1','2025-03-31 06:01:08'),(3,'2','2025-03-31 06:12:12'),(4,'3','2025-03-31 06:12:12'),(5,'0','2025-04-01 05:49:55'),(6,'4','2025-04-01 05:49:56'),(7,'4','2025-04-01 05:57:07'),(8,'0','2025-04-01 05:57:08'),(9,'1','2025-04-01 06:06:15'),(10,'3','2025-04-01 06:06:16'),(11,'4','2025-04-01 06:12:09'),(12,'0','2025-04-01 06:12:11'),(13,'3','2025-04-02 06:14:34'),(14,'1','2025-04-02 06:14:34'),(15,'3','2025-04-02 06:07:27'),(16,'2','2025-04-02 06:14:34'),(17,'1','2025-04-02 06:23:18'),(18,'3','2025-04-02 06:23:19'),(19,'3','2025-04-02 06:32:10'),(20,'2','2025-04-02 06:32:11'),(21,'1','2025-04-03 04:56:01'),(22,'3','2025-04-03 04:56:02'),(23,'4','2025-04-03 05:03:11'),(24,'0','2025-04-03 05:03:11');
+INSERT INTO `resultados` VALUES (1,'3','2025-04-04 23:25:39'),(2,'2','2025-04-04 23:25:40'),(3,'1','2025-04-04 23:31:53'),(4,'3','2025-04-04 23:31:54'),(5,'1','2025-04-04 23:47:37'),(6,'3','2025-04-04 23:47:38'),(7,'3','2025-04-04 23:57:30'),(8,'2','2025-04-04 23:57:30'),(9,NULL,NULL),(10,NULL,NULL),(11,NULL,NULL),(12,NULL,NULL),(13,NULL,NULL),(14,NULL,NULL),(15,NULL,NULL),(16,NULL,NULL),(17,NULL,NULL),(18,NULL,NULL),(19,NULL,NULL),(20,NULL,NULL),(21,NULL,NULL),(22,NULL,NULL),(23,NULL,NULL),(24,NULL,NULL);
 /*!40000 ALTER TABLE `resultados` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -441,7 +441,7 @@ CREATE TABLE `times_sorteados` (
   `id` bigint NOT NULL AUTO_INCREMENT,
   `nome` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -450,7 +450,7 @@ CREATE TABLE `times_sorteados` (
 
 LOCK TABLES `times_sorteados` WRITE;
 /*!40000 ALTER TABLE `times_sorteados` DISABLE KEYS */;
-INSERT INTO `times_sorteados` VALUES (5,'Panasonic'),(6,'Brastemp'),(7,'Juventude'),(8,'Element');
+INSERT INTO `times_sorteados` VALUES (9,'Galaxy'),(10,'Penharol'),(11,'Halor'),(12,'Raiden');
 /*!40000 ALTER TABLE `times_sorteados` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -494,7 +494,7 @@ CREATE TABLE `torneio` (
   `pontos` bigint DEFAULT NULL,
   `saldo` bigint DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -503,7 +503,7 @@ CREATE TABLE `torneio` (
 
 LOCK TABLES `torneio` WRITE;
 /*!40000 ALTER TABLE `torneio` DISABLE KEYS */;
-INSERT INTO `torneio` VALUES (5,'Panasonic',11,10),(6,'Element',5,-2),(7,'Brastemp',6,2),(8,'Juventude',3,-10);
+INSERT INTO `torneio` VALUES (9,'Raiden',2,1),(10,'Halor',0,-4),(11,'Galaxy',3,3),(12,'Penharol',1,0);
 /*!40000 ALTER TABLE `torneio` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -539,4 +539,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-04-03  5:42:01
+-- Dump completed on 2025-04-05  3:25:25
