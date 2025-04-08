@@ -317,7 +317,7 @@ CREATE TABLE `ranking_titulos` (
   `superCopa` int DEFAULT NULL,
   `total` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -326,7 +326,7 @@ CREATE TABLE `ranking_titulos` (
 
 LOCK TABLES `ranking_titulos` WRITE;
 /*!40000 ALTER TABLE `ranking_titulos` DISABLE KEYS */;
-INSERT INTO `ranking_titulos` VALUES (1,'Taylor',1,NULL,NULL,NULL,NULL,1),(2,'Homem de Ferro',1,NULL,NULL,NULL,NULL,1),(3,'Titan',1,NULL,NULL,NULL,NULL,1),(4,'Renan',1,NULL,NULL,NULL,NULL,1),(5,'Rodrigo',1,NULL,NULL,NULL,NULL,1),(6,'Rafael',1,NULL,NULL,NULL,NULL,1),(7,'Matias',1,NULL,NULL,NULL,NULL,1),(8,'Dove',1,NULL,NULL,NULL,NULL,1);
+INSERT INTO `ranking_titulos` VALUES (1,'Taylor',1,NULL,NULL,NULL,NULL,1),(2,'Homem de Ferro',1,NULL,NULL,NULL,NULL,1),(3,'Titan',1,NULL,NULL,NULL,NULL,1),(4,'Renan',1,NULL,NULL,NULL,NULL,1),(5,'Rodrigo',1,NULL,NULL,NULL,NULL,1),(6,'Rafael',1,NULL,NULL,NULL,NULL,1),(7,'Matias',1,NULL,NULL,NULL,NULL,1),(8,'Dove',1,NULL,NULL,NULL,NULL,1),(9,'Vinicius',1,NULL,NULL,NULL,NULL,1),(10,'Thanos',1,NULL,NULL,NULL,NULL,1),(11,'Tati',1,NULL,NULL,NULL,NULL,1),(12,'Pantene',1,NULL,NULL,NULL,NULL,1);
 /*!40000 ALTER TABLE `ranking_titulos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -539,4 +539,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-04-08  5:54:42
+-- Dump completed on 2025-04-08  6:02:57
