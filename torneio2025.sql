@@ -64,7 +64,6 @@ CREATE TABLE `artilheiro_torneio` (
 
 LOCK TABLES `artilheiro_torneio` WRITE;
 /*!40000 ALTER TABLE `artilheiro_torneio` DISABLE KEYS */;
-INSERT INTO `artilheiro_torneio` VALUES (23,2,'Vinicius'),(24,2,'Monstro'),(25,10,'Gael'),(26,7,'Thanos'),(27,10,'Raul'),(28,9,'Michel'),(29,1,'Super Homem'),(30,2,'Sr Incrivel'),(31,7,'Tati'),(32,1,'Theo'),(33,1,'Cif');
 /*!40000 ALTER TABLE `artilheiro_torneio` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -117,7 +116,6 @@ CREATE TABLE `assistencia_torneio` (
 
 LOCK TABLES `assistencia_torneio` WRITE;
 /*!40000 ALTER TABLE `assistencia_torneio` DISABLE KEYS */;
-INSERT INTO `assistencia_torneio` VALUES (32,2,'Thanos'),(33,2,'Gael'),(34,2,'Cif'),(35,3,'Vinicius'),(36,3,'Luiza'),(37,3,'Sr Incrivel'),(38,2,'Tati'),(39,1,'Michel'),(40,2,'Varicel'),(41,3,'Theo'),(42,2,'Super Homem'),(43,3,'Pantene'),(44,3,'Pepe'),(45,1,'Raul'),(46,2,'Monstro');
 /*!40000 ALTER TABLE `assistencia_torneio` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -351,7 +349,7 @@ CREATE TABLE `resultados` (
 
 LOCK TABLES `resultados` WRITE;
 /*!40000 ALTER TABLE `resultados` DISABLE KEYS */;
-INSERT INTO `resultados` VALUES (1,'3','2025-04-04 23:25:39'),(2,'2','2025-04-04 23:25:40'),(3,'1','2025-04-04 23:31:53'),(4,'3','2025-04-04 23:31:54'),(5,'1','2025-04-04 23:47:37'),(6,'3','2025-04-04 23:47:38'),(7,'3','2025-04-04 23:57:30'),(8,'2','2025-04-04 23:57:30'),(9,'2','2025-04-06 06:14:19'),(10,'3','2025-04-06 06:14:20'),(11,'1','2025-04-06 06:23:44'),(12,'3','2025-04-06 06:23:45'),(13,'1','2025-04-07 07:37:45'),(14,'3','2025-04-07 07:37:46'),(15,'1','2025-04-07 07:47:17'),(16,'3','2025-04-07 07:47:18'),(17,'3','2025-04-08 05:00:01'),(18,'2','2025-04-08 05:00:02'),(19,'1','2025-04-08 05:07:44'),(20,'3','2025-04-08 05:07:45'),(21,'1','2025-04-08 05:17:57'),(22,'3','2025-04-08 05:17:58'),(23,'1','2025-04-08 05:25:52'),(24,'3','2025-04-08 05:25:53');
+INSERT INTO `resultados` VALUES (1,NULL,NULL),(2,NULL,NULL),(3,NULL,NULL),(4,NULL,NULL),(5,NULL,NULL),(6,NULL,NULL),(7,NULL,NULL),(8,NULL,NULL),(9,NULL,NULL),(10,NULL,NULL),(11,NULL,NULL),(12,NULL,NULL),(13,NULL,NULL),(14,NULL,NULL),(15,NULL,NULL),(16,NULL,NULL),(17,NULL,NULL),(18,NULL,NULL),(19,NULL,NULL),(20,NULL,NULL),(21,NULL,NULL),(22,NULL,NULL),(23,NULL,NULL),(24,NULL,NULL);
 /*!40000 ALTER TABLE `resultados` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -441,7 +439,7 @@ CREATE TABLE `times_sorteados` (
   `id` bigint NOT NULL AUTO_INCREMENT,
   `nome` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -450,7 +448,7 @@ CREATE TABLE `times_sorteados` (
 
 LOCK TABLES `times_sorteados` WRITE;
 /*!40000 ALTER TABLE `times_sorteados` DISABLE KEYS */;
-INSERT INTO `times_sorteados` VALUES (9,'Galaxy'),(10,'Penharol'),(11,'Halor'),(12,'Raiden');
+INSERT INTO `times_sorteados` VALUES (13,'Once Caldas'),(14,'Ases'),(15,'Vans'),(16,'Lacta');
 /*!40000 ALTER TABLE `times_sorteados` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -494,7 +492,7 @@ CREATE TABLE `torneio` (
   `pontos` bigint DEFAULT NULL,
   `saldo` bigint DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -503,7 +501,7 @@ CREATE TABLE `torneio` (
 
 LOCK TABLES `torneio` WRITE;
 /*!40000 ALTER TABLE `torneio` DISABLE KEYS */;
-INSERT INTO `torneio` VALUES (9,'Raiden',4,-2),(10,'Halor',4,-3),(11,'Galaxy',7,5),(12,'Penharol',5,0);
+INSERT INTO `torneio` VALUES (13,'Ases',0,0),(14,'Once Caldas',0,0),(15,'Lacta',0,0),(16,'Vans',0,0);
 /*!40000 ALTER TABLE `torneio` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -539,4 +537,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-04-08  6:02:57
+-- Dump completed on 2025-04-08  6:13:45
