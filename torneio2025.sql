@@ -351,7 +351,7 @@ CREATE TABLE `resultados` (
 
 LOCK TABLES `resultados` WRITE;
 /*!40000 ALTER TABLE `resultados` DISABLE KEYS */;
-INSERT INTO `resultados` VALUES (1,'3','2025-04-18 22:57:53'),(2,'2','2025-04-18 22:57:53'),(3,'3','2025-04-18 22:57:55'),(4,'1','2025-04-18 22:57:57'),(5,'2','2025-04-18 22:58:34'),(6,'3','2025-04-18 22:58:34'),(7,'3','2025-04-18 22:59:16'),(8,'1','2025-04-18 22:59:16'),(9,'1','2025-04-18 23:20:57'),(10,'3','2025-04-18 23:21:08'),(11,'3','2025-04-18 23:30:51'),(12,'2','2025-04-18 23:30:50'),(13,'3','2025-04-19 02:19:54'),(14,'2','2025-04-19 02:19:56'),(15,'2','2025-04-19 02:27:31'),(16,'3','2025-04-19 02:27:32'),(17,'3','2025-04-19 02:38:32'),(18,'1','2025-04-19 02:38:33'),(19,'1','2025-04-19 02:44:21'),(20,'3','2025-04-19 02:44:20'),(21,'3','2025-04-19 02:57:46'),(22,'2','2025-04-19 02:57:48'),(23,'4','2025-04-19 03:06:49'),(24,'0','2025-04-19 03:06:49');
+INSERT INTO `resultados` VALUES (1,NULL,NULL),(2,NULL,NULL),(3,NULL,NULL),(4,NULL,NULL),(5,NULL,NULL),(6,NULL,NULL),(7,NULL,NULL),(8,NULL,NULL),(9,NULL,NULL),(10,NULL,NULL),(11,NULL,NULL),(12,NULL,NULL),(13,NULL,NULL),(14,NULL,NULL),(15,NULL,NULL),(16,NULL,NULL),(17,NULL,NULL),(18,NULL,NULL),(19,NULL,NULL),(20,NULL,NULL),(21,NULL,NULL),(22,NULL,NULL),(23,NULL,NULL),(24,NULL,NULL);
 /*!40000 ALTER TABLE `resultados` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -442,7 +442,7 @@ CREATE TABLE `times_sorteados` (
   `id` bigint NOT NULL AUTO_INCREMENT,
   `nome` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -451,7 +451,7 @@ CREATE TABLE `times_sorteados` (
 
 LOCK TABLES `times_sorteados` WRITE;
 /*!40000 ALTER TABLE `times_sorteados` DISABLE KEYS */;
-INSERT INTO `times_sorteados` VALUES (28,'Once Caldas'),(29,'Panasonic'),(30,'Brastemp'),(31,'Galaxy');
+INSERT INTO `times_sorteados` VALUES (32,'Democration'),(33,'Penharol'),(34,'Castelão'),(35,'Ases'),(36,'Castelão'),(37,'Penharol');
 /*!40000 ALTER TABLE `times_sorteados` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -494,8 +494,9 @@ CREATE TABLE `torneio` (
   `nome` varchar(255) DEFAULT NULL,
   `pontos` bigint DEFAULT NULL,
   `saldo` bigint DEFAULT NULL,
+  `desempate` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -504,7 +505,7 @@ CREATE TABLE `torneio` (
 
 LOCK TABLES `torneio` WRITE;
 /*!40000 ALTER TABLE `torneio` DISABLE KEYS */;
-INSERT INTO `torneio` VALUES (29,'Panasonic',7,6),(30,'Galaxy',3,-5),(31,'Brastemp',2,-7),(32,'Once Caldas',7,6);
+INSERT INTO `torneio` VALUES (1,'Democration',0,0,NULL),(2,'Ases',0,0,NULL),(3,'Castelão',0,0,NULL),(4,'Penharol',0,0,NULL);
 /*!40000 ALTER TABLE `torneio` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -540,4 +541,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-04-19  3:19:39
+-- Dump completed on 2025-04-19  4:16:17
