@@ -271,7 +271,7 @@ CREATE TABLE `ranking_clubes` (
 
 LOCK TABLES `ranking_clubes` WRITE;
 /*!40000 ALTER TABLE `ranking_clubes` DISABLE KEYS */;
-INSERT INTO `ranking_clubes` VALUES (1,'Democration',100,NULL),(2,'Castelão',60,NULL),(3,'Brécia',80,NULL),(4,'Panasonic',100,NULL),(5,'Brastemp',60,NULL),(6,'Element',120,NULL),(7,'Galaxy',100,NULL),(8,'Penharol',60,NULL),(9,'Raiden',30,NULL),(10,'Ases',100,NULL),(11,'Once Caldas',60,NULL),(12,'Vans',50,NULL);
+INSERT INTO `ranking_clubes` VALUES (1,'Democration',500,NULL),(2,'Castelão',160,NULL),(3,'Brécia',80,NULL),(4,'Panasonic',400,NULL),(5,'Brastemp',80,NULL),(6,'Element',120,NULL),(7,'Galaxy',140,NULL),(8,'Penharol',60,NULL),(9,'Raiden',30,NULL),(10,'Ases',160,NULL),(11,'Once Caldas',260,NULL),(12,'Vans',50,NULL);
 /*!40000 ALTER TABLE `ranking_clubes` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -542,4 +542,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-04-26 13:15:13
+-- Dump completed on 2025-04-26 13:24:07
