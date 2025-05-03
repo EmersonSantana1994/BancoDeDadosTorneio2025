@@ -39,7 +39,7 @@ CREATE TABLE `artilheiro` (
 
 LOCK TABLES `artilheiro` WRITE;
 /*!40000 ALTER TABLE `artilheiro` DISABLE KEYS */;
-INSERT INTO `artilheiro` VALUES (1,6,'Pantera Negra',59),(2,21,'Azuzinho',60),(3,20,'Homem de Ferro',10),(4,35,'Taylor',9),(5,33,'Wilham',2),(6,26,'Sabrina',30),(7,22,'Pente Preto',1),(8,10,'Joker',58),(9,5,'Filipe',29),(10,1,'Telefone',57),(11,1,'Dove',8),(12,38,'Rafael',6),(13,21,'Renato',46),(14,12,'Pente Laranja',51),(15,20,'Tiago',38),(16,2,'Gradiente',52),(17,15,'Pente Rosa',37),(18,2,'Eva',47),(19,1,'Hammer',45),(20,3,'Rodrigo',5),(21,1,'Rivelino',50),(22,1,'Katchup',40),(23,3,'Vinicius',33),(24,2,'Monstro',44),(25,18,'Gael',42),(26,9,'Thanos',34),(27,18,'Raul',13),(28,25,'Michel',18),(29,3,'Super Homem',14),(30,2,'Sr Incrivel',17),(31,14,'Tati',35),(32,1,'Theo',16),(33,1,'Cif',41),(34,6,'Buzz',28),(35,28,'Luciano',22),(36,4,'Maçaneta',21),(37,10,'Hulk',25),(38,23,'Alice',62),(39,25,'Elza',53),(40,27,'Pente Cinza',26),(41,4,'Rildo',63),(42,1,'Sherk',56),(43,2,'Mostarda',24),(44,1,'Sensodyni',55),(45,1,'Sundown',61),(46,1,'Pepe',19),(47,1,'Ufe',31),(48,2,'Azulão',27),(49,1,'Renan',12),(50,2,'Crystal',64),(51,2,'Controle do dvd',69),(52,1,'Lacan',72),(53,3,'Coringa',71),(54,1,'Verdinho',68),(55,2,'Escuro',70);
+INSERT INTO `artilheiro` VALUES (1,6,'Pantera Negra',59),(2,21,'Azuzinho',60),(3,20,'Homem de Ferro',10),(4,35,'Taylor',9),(5,33,'Wilham',2),(6,26,'Sabrina',30),(7,22,'Pente Preto',1),(8,10,'Joker',58),(9,5,'Filipe',29),(10,1,'Telefone',57),(11,1,'Dove',8),(12,38,'Rafael',6),(13,21,'Renato',46),(14,17,'Pente Laranja',51),(15,20,'Tiago',38),(16,2,'Gradiente',52),(17,15,'Pente Rosa',37),(18,2,'Eva',47),(19,1,'Hammer',45),(20,3,'Rodrigo',5),(21,1,'Rivelino',50),(22,1,'Katchup',40),(23,3,'Vinicius',33),(24,2,'Monstro',44),(25,18,'Gael',42),(26,9,'Thanos',34),(27,18,'Raul',13),(28,25,'Michel',18),(29,3,'Super Homem',14),(30,2,'Sr Incrivel',17),(31,14,'Tati',35),(32,1,'Theo',16),(33,1,'Cif',41),(34,8,'Buzz',28),(35,28,'Luciano',22),(36,4,'Maçaneta',21),(37,10,'Hulk',25),(38,23,'Alice',62),(39,25,'Elza',53),(40,27,'Pente Cinza',26),(41,4,'Rildo',63),(42,1,'Sherk',56),(43,4,'Mostarda',24),(44,1,'Sensodyni',55),(45,2,'Sundown',61),(46,1,'Pepe',19),(47,1,'Ufe',31),(48,2,'Azulão',27),(49,1,'Renan',12),(50,2,'Crystal',64),(51,2,'Controle do dvd',69),(52,1,'Lacan',72),(53,3,'Coringa',71),(54,1,'Verdinho',68),(55,4,'Escuro',70);
 /*!40000 ALTER TABLE `artilheiro` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -55,7 +55,7 @@ CREATE TABLE `artilheiro_torneio` (
   `gols` bigint DEFAULT NULL,
   `nome` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=110 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=112 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -64,7 +64,7 @@ CREATE TABLE `artilheiro_torneio` (
 
 LOCK TABLES `artilheiro_torneio` WRITE;
 /*!40000 ALTER TABLE `artilheiro_torneio` DISABLE KEYS */;
-INSERT INTO `artilheiro_torneio` VALUES (103,6,'Luciano'),(104,1,'Pente Laranja'),(105,2,'Buzz'),(106,3,'Pente Cinza'),(107,2,'Hulk'),(108,2,'Elza'),(109,2,'Escuro');
+INSERT INTO `artilheiro_torneio` VALUES (103,6,'Luciano'),(104,6,'Pente Laranja'),(105,4,'Buzz'),(106,3,'Pente Cinza'),(107,2,'Hulk'),(108,2,'Elza'),(109,4,'Escuro'),(110,1,'Sundown'),(111,2,'Mostarda');
 /*!40000 ALTER TABLE `artilheiro_torneio` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -92,7 +92,7 @@ CREATE TABLE `assistencia` (
 
 LOCK TABLES `assistencia` WRITE;
 /*!40000 ALTER TABLE `assistencia` DISABLE KEYS */;
-INSERT INTO `assistencia` VALUES (3,2,'Telefone',57),(4,9,'Pente Preto',1),(6,13,'Luiz',3),(7,3,'Filipe',29),(8,9,'Ufe',31),(9,14,'Titan',11),(10,7,'Pantera Negra',59),(11,1,'Monange',32),(12,15,'Homem de Ferro',10),(13,5,'Renan',12),(14,14,'Taylor',9),(15,1,'Joker',58),(16,8,'Wilham',2),(17,6,'Rafael',6),(18,10,'Hammer',45),(19,3,'Rivelino',50),(20,12,'Cindy',49),(21,3,'Pente Rosa',37),(22,8,'Tiago',38),(23,20,'Matias',7),(24,5,'Dove',8),(25,3,'Renato',46),(26,2,'Controle da Tv',48),(27,10,'Rodrigo',5),(28,11,'Eva',47),(29,1,'Gradiente',52),(30,1,'Katchup',40),(31,6,'Dony',39),(32,9,'Thanos',34),(33,2,'Gael',42),(34,7,'Cif',41),(35,7,'Vinicius',33),(36,4,'Luiza',15),(37,3,'Sr Incrivel',17),(38,3,'Tati',35),(39,2,'Michel',18),(40,5,'Varicel',43),(41,3,'Theo',16),(42,4,'Super Homem',14),(43,5,'Pantene',36),(44,5,'Pepe',19),(45,1,'Raul',13),(46,2,'Monstro',44),(47,15,'Hulk',25),(48,7,'Maçaneta',21),(49,6,'Mostarda',24),(50,4,'Pente Cinza',26),(51,9,'Loriel',54),(52,2,'Rildo',63),(53,9,'Crystal',64),(55,14,'Azulão',27),(56,2,'Alice',62),(57,8,'Azeite',23),(58,3,'Sherk',56),(59,2,'Buzz',28),(60,5,'Sundown',61),(61,2,'Sensodyni',55),(62,2,'Luciano',22),(63,1,'Pente Laranja',51),(64,1,'Leonardo',4),(65,8,'Elza',53),(66,3,'Sabrina',30),(67,1,'Azuzinho',60),(68,4,'Lacan',72),(70,4,'Controle do dvd',69),(71,1,'Verdinho',68);
+INSERT INTO `assistencia` VALUES (3,2,'Telefone',57),(4,9,'Pente Preto',1),(6,13,'Luiz',3),(7,3,'Filipe',29),(8,9,'Ufe',31),(9,14,'Titan',11),(10,7,'Pantera Negra',59),(11,1,'Monange',32),(12,15,'Homem de Ferro',10),(13,5,'Renan',12),(14,14,'Taylor',9),(15,1,'Joker',58),(16,8,'Wilham',2),(17,6,'Rafael',6),(18,10,'Hammer',45),(19,3,'Rivelino',50),(20,12,'Cindy',49),(21,3,'Pente Rosa',37),(22,8,'Tiago',38),(23,20,'Matias',7),(24,5,'Dove',8),(25,3,'Renato',46),(26,2,'Controle da Tv',48),(27,10,'Rodrigo',5),(28,11,'Eva',47),(29,1,'Gradiente',52),(30,1,'Katchup',40),(31,6,'Dony',39),(32,9,'Thanos',34),(33,2,'Gael',42),(34,7,'Cif',41),(35,7,'Vinicius',33),(36,6,'Luiza',15),(37,3,'Sr Incrivel',17),(38,3,'Tati',35),(39,2,'Michel',18),(40,5,'Varicel',43),(41,3,'Theo',16),(42,4,'Super Homem',14),(43,6,'Pantene',36),(44,5,'Pepe',19),(45,1,'Raul',13),(46,2,'Monstro',44),(47,15,'Hulk',25),(48,7,'Maçaneta',21),(49,6,'Mostarda',24),(50,4,'Pente Cinza',26),(51,9,'Loriel',54),(52,2,'Rildo',63),(53,9,'Crystal',64),(55,14,'Azulão',27),(56,2,'Alice',62),(57,8,'Azeite',23),(58,3,'Sherk',56),(59,3,'Buzz',28),(60,7,'Sundown',61),(61,3,'Sensodyni',55),(62,2,'Luciano',22),(63,3,'Pente Laranja',51),(64,1,'Leonardo',4),(65,8,'Elza',53),(66,3,'Sabrina',30),(67,1,'Azuzinho',60),(68,4,'Lacan',72),(70,4,'Controle do dvd',69),(71,1,'Verdinho',68);
 /*!40000 ALTER TABLE `assistencia` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -108,7 +108,7 @@ CREATE TABLE `assistencia_torneio` (
   `assistencias` bigint DEFAULT NULL,
   `nome` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=144 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=147 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -117,7 +117,7 @@ CREATE TABLE `assistencia_torneio` (
 
 LOCK TABLES `assistencia_torneio` WRITE;
 /*!40000 ALTER TABLE `assistencia_torneio` DISABLE KEYS */;
-INSERT INTO `assistencia_torneio` VALUES (135,2,'Maçaneta'),(136,1,'Loriel'),(137,1,'Sundown'),(138,2,'Titan'),(139,1,'Sensodyni'),(140,1,'Luiz'),(141,2,'Elza'),(142,1,'Pantene'),(143,2,'Hulk');
+INSERT INTO `assistencia_torneio` VALUES (135,2,'Maçaneta'),(136,1,'Loriel'),(137,3,'Sundown'),(138,2,'Titan'),(139,2,'Sensodyni'),(140,1,'Luiz'),(141,2,'Elza'),(142,2,'Pantene'),(143,2,'Hulk'),(144,2,'Luiza'),(145,1,'Buzz'),(146,2,'Pente Laranja');
 /*!40000 ALTER TABLE `assistencia_torneio` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -212,7 +212,7 @@ CREATE TABLE `placar_jogo` (
   `nome` varchar(100) DEFAULT NULL,
   `placar` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=219 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=223 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -378,7 +378,7 @@ CREATE TABLE `resultados_copa` (
 
 LOCK TABLES `resultados_copa` WRITE;
 /*!40000 ALTER TABLE `resultados_copa` DISABLE KEYS */;
-INSERT INTO `resultados_copa` VALUES (1,NULL,NULL,NULL,NULL),(2,NULL,NULL,NULL,NULL),(3,NULL,NULL,NULL,NULL),(4,NULL,NULL,NULL,NULL),(5,NULL,NULL,NULL,NULL),(6,NULL,NULL,NULL,NULL),(7,NULL,NULL,NULL,NULL),(8,NULL,NULL,NULL,NULL),(9,NULL,NULL,NULL,NULL),(10,NULL,NULL,NULL,NULL),(11,NULL,NULL,NULL,NULL),(12,NULL,NULL,NULL,NULL),(13,NULL,NULL,NULL,NULL),(14,NULL,NULL,NULL,NULL),(15,NULL,NULL,NULL,NULL),(16,NULL,NULL,NULL,NULL),(17,NULL,1,NULL,'2025-05-02 21:09:05'),(18,NULL,4,NULL,'2025-05-02 21:09:05'),(19,NULL,2,NULL,'2025-05-03 12:43:11'),(20,NULL,0,NULL,'2025-05-03 12:43:11'),(21,NULL,2,NULL,'2025-05-02 21:15:51'),(22,NULL,4,NULL,'2025-05-02 21:15:51'),(23,NULL,3,NULL,'2025-05-03 12:48:14'),(24,NULL,2,NULL,'2025-05-03 12:48:14'),(25,NULL,NULL,NULL,NULL),(26,NULL,NULL,NULL,NULL),(27,NULL,NULL,NULL,NULL),(28,NULL,NULL,NULL,NULL),(29,NULL,NULL,NULL,NULL),(30,NULL,NULL,NULL,NULL),(31,NULL,NULL,NULL,NULL),(32,NULL,NULL,NULL,NULL),(33,NULL,NULL,NULL,NULL),(34,NULL,NULL,NULL,NULL),(35,NULL,NULL,NULL,NULL),(36,NULL,NULL,NULL,NULL),(37,NULL,NULL,NULL,NULL),(38,NULL,NULL,NULL,NULL),(39,NULL,NULL,NULL,NULL),(40,NULL,NULL,NULL,NULL),(41,NULL,NULL,NULL,NULL),(42,NULL,NULL,NULL,NULL),(43,NULL,NULL,NULL,NULL),(44,NULL,NULL,NULL,NULL),(45,NULL,NULL,NULL,NULL),(46,NULL,NULL,NULL,NULL),(47,NULL,NULL,NULL,NULL),(48,NULL,NULL,NULL,NULL);
+INSERT INTO `resultados_copa` VALUES (1,NULL,NULL,NULL,NULL),(2,NULL,NULL,NULL,NULL),(3,NULL,NULL,NULL,NULL),(4,NULL,NULL,NULL,NULL),(5,NULL,NULL,NULL,NULL),(6,NULL,NULL,NULL,NULL),(7,NULL,NULL,NULL,NULL),(8,NULL,NULL,NULL,NULL),(9,NULL,NULL,NULL,NULL),(10,NULL,NULL,NULL,NULL),(11,NULL,NULL,NULL,NULL),(12,NULL,NULL,NULL,NULL),(13,NULL,NULL,NULL,NULL),(14,NULL,NULL,NULL,NULL),(15,NULL,NULL,NULL,NULL),(16,NULL,NULL,NULL,NULL),(17,NULL,1,NULL,'2025-05-02 21:09:05'),(18,NULL,4,NULL,'2025-05-02 21:09:05'),(19,NULL,2,NULL,'2025-05-03 12:43:11'),(20,NULL,0,NULL,'2025-05-03 12:43:11'),(21,NULL,2,NULL,'2025-05-02 21:15:51'),(22,NULL,4,NULL,'2025-05-02 21:15:51'),(23,NULL,3,NULL,'2025-05-03 12:48:14'),(24,NULL,2,NULL,'2025-05-03 12:48:14'),(25,NULL,NULL,NULL,NULL),(26,NULL,NULL,NULL,NULL),(27,NULL,NULL,NULL,NULL),(28,NULL,NULL,NULL,NULL),(29,NULL,NULL,NULL,NULL),(30,NULL,NULL,NULL,NULL),(31,NULL,NULL,NULL,NULL),(32,NULL,NULL,NULL,NULL),(33,NULL,NULL,NULL,NULL),(34,NULL,NULL,NULL,NULL),(35,NULL,NULL,NULL,NULL),(36,NULL,NULL,NULL,NULL),(37,NULL,NULL,NULL,NULL),(38,NULL,NULL,NULL,NULL),(39,NULL,NULL,NULL,NULL),(40,NULL,NULL,NULL,NULL),(41,NULL,NULL,NULL,NULL),(42,NULL,NULL,NULL,NULL),(43,NULL,4,NULL,'2025-05-03 16:35:24'),(44,NULL,3,NULL,'2025-05-03 16:35:24'),(45,NULL,1,NULL,'2025-05-03 16:41:26'),(46,NULL,4,NULL,'2025-05-03 16:41:26'),(47,NULL,NULL,NULL,NULL),(48,NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `resultados_copa` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -542,4 +542,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-05-03 13:16:16
+-- Dump completed on 2025-05-03 16:48:34
